@@ -56,3 +56,4 @@ ax1 = ppm_data.plot.scatter(
 
 ax2 = ppm_data.plot.scatter(
     x = "Longitude", y = "Latitude", c = "N2O (ppm)", colormap = "viridis")
+
