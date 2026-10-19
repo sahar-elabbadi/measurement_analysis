@@ -16,7 +16,7 @@ ppm_data = pd.read_csv(ppm_pathfile)
 # Load file: 
 strato_test = gp.read_file(kml_pathfile, driver = "libkml")
 # Data exploration: 
-print(strato_test.head())
+# print(strato_test.head())
 print("Number of rows & columns in dataframe:", strato_test.shape)
 print("Column Names:", strato_test.columns)
 print(strato_test.info())
@@ -48,7 +48,7 @@ ppm_data.columns
 #%% 4) Make plots 
 # from ppm_data, plot lat/long and color = CO2 
 
-# Column sof interest: 'CO2 (ppm)', 'N2O (ppm)', 'Latitude', 'Longitude'
+# Columns of interest: 'CO2 (ppm)', 'N2O (ppm)', 'Latitude', 'Longitude'
 import matplotlib.pyplot as plt 
 
 ax1 = ppm_data.plot.scatter(
