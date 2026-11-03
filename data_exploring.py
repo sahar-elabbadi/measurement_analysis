@@ -45,15 +45,4 @@ ppm_data.columns
 #  > Check: does the data we collected at Larry's field site include lat/long data? 
 
 
-#%% 4) Make plots 
-# from ppm_data, plot lat/long and color = CO2 
-
-# Columns of interest: 'CO2 (ppm)', 'N2O (ppm)', 'Latitude', 'Longitude'
-import matplotlib.pyplot as plt 
-
-ax1 = ppm_data.plot.scatter(
-    x = "Longitude", y = "Latitude", c = "CO2 (ppm)", colormap = "viridis")
-
-ax2 = ppm_data.plot.scatter(
-    x = "Longitude", y = "Latitude", c = "N2O (ppm)", colormap = "viridis")
 
